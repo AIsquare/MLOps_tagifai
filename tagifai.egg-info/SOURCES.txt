@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+tagifai.egg-info/PKG-INFO
+tagifai.egg-info/SOURCES.txt
+tagifai.egg-info/dependency_links.txt
+tagifai.egg-info/requires.txt
+tagifai.egg-info/top_level.txt

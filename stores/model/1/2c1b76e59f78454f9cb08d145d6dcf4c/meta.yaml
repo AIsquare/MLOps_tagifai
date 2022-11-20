@@ -1,0 +1,15 @@
+artifact_uri: file:///home/aamir/mlops/stores/model/1/2c1b76e59f78454f9cb08d145d6dcf4c/artifacts
+end_time: 1668450232771
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: 2c1b76e59f78454f9cb08d145d6dcf4c
+run_uuid: 2c1b76e59f78454f9cb08d145d6dcf4c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1668450232758
+status: 3
+tags: []
+user_id: aamir

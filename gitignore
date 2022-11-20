@@ -1,0 +1,12 @@
+# Data
+logs/
+stores/
+data/
+
+# Packaging
+venv/
+*.egg-info/
+__pycache__/
+
+# Misc
+.DS_Store

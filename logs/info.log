@@ -1,0 +1,191 @@
+INFO 2022-11-14 23:49:31,557 [root:main.py:elt_data:76]
+✅ Saved data!
+
+INFO 2022-11-15 00:17:20,791 [root:main.py:elt_data:79]
+✅ Saved data!
+
+INFO 2022-11-19 17:43:40,667 [uvicorn.error:server.py:serve:75]
+Started server process [7456]
+
+INFO 2022-11-19 17:43:40,741 [uvicorn.error:on.py:startup:45]
+Waiting for application startup.
+
+ERROR 2022-11-19 17:43:40,752 [uvicorn.error:on.py:send:119]
+Traceback (most recent call last):
+  File "/home/aamir/venv/lib/python3.7/site-packages/starlette/routing.py", line 635, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/aamir/venv/lib/python3.7/site-packages/starlette/routing.py", line 530, in __aenter__
+    await self._router.startup()
+  File "/home/aamir/venv/lib/python3.7/site-packages/starlette/routing.py", line 614, in startup
+    handler()
+  File "./app/api.py", line 21, in load_artifacts
+    run_id = open(Path(config.CONFIG_DIR, "run_id.txt")).read()
+NameError: name 'Path' is not defined
+
+
+ERROR 2022-11-19 17:43:40,766 [uvicorn.error:on.py:startup:56]
+Application startup failed. Exiting.
+
+INFO 2022-11-19 17:44:16,504 [uvicorn.error:server.py:serve:75]
+Started server process [7583]
+
+INFO 2022-11-19 17:44:16,513 [uvicorn.error:on.py:startup:45]
+Waiting for application startup.
+
+ERROR 2022-11-19 17:44:17,413 [uvicorn.error:on.py:send:119]
+Traceback (most recent call last):
+  File "/home/aamir/venv/lib/python3.7/site-packages/starlette/routing.py", line 635, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/aamir/venv/lib/python3.7/site-packages/starlette/routing.py", line 530, in __aenter__
+    await self._router.startup()
+  File "/home/aamir/venv/lib/python3.7/site-packages/starlette/routing.py", line 614, in startup
+    handler()
+  File "./app/api.py", line 25, in load_artifacts
+    artifacts = main.load_artifacts(run_id=run_id)
+  File "./tagifai/main.py", line 120, in load_artifacts
+    args = Namespace(**utils.load_dict(filepath=Path(artifacts_dir, "args.json")))
+  File "./tagifai/utils.py", line 15, in load_dict
+    with open(filepath) as fp:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/aamir/mlops/stores/model/0/d4e0d9872d18475f926e594da2157154/artifacts/args.json'
+
+
+ERROR 2022-11-19 17:44:17,430 [uvicorn.error:on.py:startup:56]
+Application startup failed. Exiting.
+
+INFO 2022-11-19 18:01:08,559 [uvicorn.error:server.py:serve:75]
+Started server process [9364]
+
+INFO 2022-11-19 18:01:08,565 [uvicorn.error:on.py:startup:45]
+Waiting for application startup.
+
+ERROR 2022-11-19 18:01:08,574 [uvicorn.error:on.py:send:119]
+Traceback (most recent call last):
+  File "/home/aamir/venv/lib/python3.7/site-packages/starlette/routing.py", line 635, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/aamir/venv/lib/python3.7/site-packages/starlette/routing.py", line 530, in __aenter__
+    await self._router.startup()
+  File "/home/aamir/venv/lib/python3.7/site-packages/starlette/routing.py", line 614, in startup
+    handler()
+  File "./app/api.py", line 25, in load_artifacts
+    artifacts = main.load_artifacts(run_id=run_id)
+  File "./tagifai/main.py", line 120, in load_artifacts
+    args = Namespace(**utils.load_dict(filepath=Path(artifacts_dir, "args.json")))
+  File "./tagifai/utils.py", line 15, in load_dict
+    with open(filepath) as fp:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/aamir/mlops/stores/model/0/dfc7634a1c994b808d6d4c9839be6b44/artifacts/args.json'
+
+
+ERROR 2022-11-19 18:01:08,581 [uvicorn.error:on.py:startup:56]
+Application startup failed. Exiting.
+
+INFO 2022-11-19 18:02:22,607 [uvicorn.error:server.py:serve:75]
+Started server process [9493]
+
+INFO 2022-11-19 18:02:22,613 [uvicorn.error:on.py:startup:45]
+Waiting for application startup.
+
+INFO 2022-11-19 18:02:22,785 [root:api.py:load_artifacts:26]
+Ready for inference!
+
+INFO 2022-11-19 18:02:22,788 [uvicorn.error:on.py:startup:59]
+Application startup complete.
+
+INFO 2022-11-19 18:02:22,790 [uvicorn.error:server.py:_log_started_message:211]
+Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+
+ERROR 2022-11-19 18:10:10,469 [uvicorn.error:h11_impl.py:run_asgi:369]
+Exception in ASGI application
+
+Traceback (most recent call last):
+  File "/home/aamir/venv/lib/python3.7/site-packages/uvicorn/protocols/http/h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/aamir/venv/lib/python3.7/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/aamir/venv/lib/python3.7/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/aamir/venv/lib/python3.7/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/aamir/venv/lib/python3.7/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/aamir/venv/lib/python3.7/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/aamir/venv/lib/python3.7/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/home/aamir/venv/lib/python3.7/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/aamir/venv/lib/python3.7/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/aamir/venv/lib/python3.7/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/aamir/venv/lib/python3.7/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/aamir/venv/lib/python3.7/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/home/aamir/venv/lib/python3.7/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/aamir/venv/lib/python3.7/site-packages/fastapi/routing.py", line 228, in app
+    dependant=dependant, values=values, is_coroutine=is_coroutine
+  File "/home/aamir/venv/lib/python3.7/site-packages/fastapi/routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/aamir/venv/lib/python3.7/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/aamir/venv/lib/python3.7/site-packages/anyio/to_thread.py", line 32, in run_sync
+    func, *args, cancellable=cancellable, limiter=limiter
+  File "/home/aamir/venv/lib/python3.7/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/home/aamir/venv/lib/python3.7/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "./app/api.py", line 42, in wrap
+    @construct_response
+  File "./app/api.py", line 61, in _predict
+    "status-code": HTTPStatus.OK,
+  File "./tagifai/predict.py", line 12, in predict
+    x = artifacts["vectorizer"].transform(texts)
+  File "/home/aamir/venv/lib/python3.7/site-packages/sklearn/feature_extraction/text.py", line 1871, in transform
+    return self._tfidf.transform(X, copy=False)
+  File "/home/aamir/venv/lib/python3.7/site-packages/sklearn/feature_extraction/text.py", line 1474, in transform
+    X = check_array(X, accept_sparse='csr', dtype=FLOAT_DTYPES, copy=copy)
+  File "/home/aamir/venv/lib/python3.7/site-packages/sklearn/utils/validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "/home/aamir/venv/lib/python3.7/site-packages/sklearn/utils/validation.py", line 729, in check_array
+    context))
+ValueError: Found array with 0 sample(s) (shape=(0, 33684)) while a minimum of 1 is required.
+INFO 2022-11-19 18:10:45,010 [uvicorn.error:server.py:shutdown:252]
+Shutting down
+
+INFO 2022-11-19 18:10:45,118 [uvicorn.error:on.py:shutdown:64]
+Waiting for application shutdown.
+
+INFO 2022-11-19 18:10:45,122 [uvicorn.error:on.py:shutdown:75]
+Application shutdown complete.
+
+INFO 2022-11-19 18:10:45,126 [uvicorn.error:server.py:serve:85]
+Finished server process [9493]
+
+INFO 2022-11-19 18:11:11,981 [uvicorn.error:server.py:serve:75]
+Started server process [9976]
+
+INFO 2022-11-19 18:11:11,987 [uvicorn.error:on.py:startup:45]
+Waiting for application startup.
+
+INFO 2022-11-19 18:11:12,135 [root:api.py:load_artifacts:26]
+Ready for inference!
+
+INFO 2022-11-19 18:11:12,137 [uvicorn.error:on.py:startup:59]
+Application startup complete.
+
+INFO 2022-11-19 18:11:12,140 [uvicorn.error:server.py:_log_started_message:211]
+Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+
+INFO 2022-11-19 19:53:02,296 [uvicorn.error:server.py:shutdown:252]
+Shutting down
+
+INFO 2022-11-19 19:53:02,520 [uvicorn.error:on.py:shutdown:64]
+Waiting for application shutdown.
+
+INFO 2022-11-19 19:53:02,529 [uvicorn.error:on.py:shutdown:75]
+Application shutdown complete.
+
+INFO 2022-11-19 19:53:02,538 [uvicorn.error:server.py:serve:85]
+Finished server process [9976]
+

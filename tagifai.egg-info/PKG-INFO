@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: tagifai
+Version: 0.1
+Summary: Classify machine learning projects.
+Home-page: https://madewithml.com/
+Author: Aamir
+Author-email: aamir@iqbal.com
+Requires-Python: >=3.7
